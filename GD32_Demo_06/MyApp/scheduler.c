@@ -20,8 +20,8 @@ static task_t scheduler_task[] =
 		{ebtn_task,5,0},
 		{uart_task,5,0},
 //		{adc_read_by_polling,5,0}
-		{adc_task,5,0},
-		{oled_task,100,0}
+//		{adc_task,5,0},
+		{oled_task,1,0}
 };
 
 /**

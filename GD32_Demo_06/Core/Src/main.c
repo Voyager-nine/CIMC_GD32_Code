@@ -106,8 +106,14 @@ int main(void)
 	ringbuffer_init();// DMA+空闲中断+环形缓冲区初始化
 	dac_sin_init();
 	adc_tim_dma_init();
-
-  /* USER CODE END 2 */
+	
+//	oled_init();//oled基础显示初始化
+	
+	oled_u8g2_init();//u8g2初始化
+//  
+	oled_page_init();//UonoUI_Page初始化
+	
+	/* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
