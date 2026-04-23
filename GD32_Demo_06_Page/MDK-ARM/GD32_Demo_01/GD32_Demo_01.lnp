@@ -38,6 +38,7 @@
 "gd32_demo_01\led_app.o"
 "gd32_demo_01\key_app.o"
 "gd32_demo_01\btn_app.o"
+"gd32_demo_01\adda_input_app.o"
 "gd32_demo_01\usart_app.o"
 "gd32_demo_01\adda_app.o"
 "gd32_demo_01\dac_app.o"

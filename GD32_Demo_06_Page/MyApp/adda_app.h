@@ -37,7 +37,6 @@ typedef struct
 
 extern wave_meas_t g_wave_meas;
 
-void wave_key_task(void);
 void adc_tim_dma_init(void);
 void adc_task(void);
 void adc_split_channels(void);

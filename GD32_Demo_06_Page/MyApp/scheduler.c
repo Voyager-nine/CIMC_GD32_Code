@@ -10,8 +10,6 @@
  *
  * 当前任务分工：
  * - led_task           : LED 显示刷新
- * - key_process_simple : 基础按键扫描
- * - wave_key_task      : 按键对应的波形控制逻辑
  * - ebtn_task          : 扩展按键库处理
  * - uart_task          : 串口命令解析
  * - adc_task           : ADC 数据分析、打印和回采处理
@@ -41,8 +39,6 @@ typedef struct
 static task_t scheduler_task[] =
 {
     {led_task, 1U, 0U},            /* 1ms 刷新一次 LED 状态 */
-    {key_process_simple, 10U, 0U}, /* 10ms 扫描一次基础按键 */
-    {wave_key_task, 10U, 0U},      /* 10ms 处理一次波形按键业务 */
     {ebtn_task, 5U, 0U},           /* 5ms 处理一次扩展按键库 */
     {uart_task, 5U, 0U},           /* 5ms 处理一次串口接收和命令 */
     {adc_task, 5U, 0U},             /* 5ms 检查一次 ADC 数据块是否就绪 */

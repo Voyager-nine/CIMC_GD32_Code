@@ -48,7 +48,7 @@ I (../Core/Inc/tim.h)(0x691817E1)
 I (../Core/Inc/usart.h)(0x69033027)
 I (../Core/Inc/gpio.h)(0x68EF9C5E)
 I (../MyApp/scheduler.h)(0x69E2F293)
-I (../MyApp/mydefine.h)(0x69EA188B)
+I (../MyApp/mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -56,9 +56,10 @@ I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
 I (../MyApp/led_app.h)(0x68F0C189)
 I (../MyApp/key_app.h)(0x69E2F244)
 I (../MyApp/btn_app.h)(0x68F33FA6)
+I (../MyApp/adda_input_app.h)(0x69EA21FE)
 I (../MyApp/usart_app.h)(0x69E2F210)
 I (../MyApp/dac_app.h)(0x69EA1715)
-I (../MyApp/adda_app.h)(0x69EA17CE)
+I (../MyApp/adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (../MyApp/oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -356,7 +357,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68C53AFC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68C53AFB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68C53AFC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
-I (../MyApp/mydefine.h)(0x69EA188B)
+I (../MyApp/mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -365,9 +366,10 @@ I (../MyApp/scheduler.h)(0x69E2F293)
 I (../MyApp/led_app.h)(0x68F0C189)
 I (../MyApp/key_app.h)(0x69E2F244)
 I (../MyApp/btn_app.h)(0x68F33FA6)
+I (../MyApp/adda_input_app.h)(0x69EA21FE)
 I (../MyApp/usart_app.h)(0x69E2F210)
 I (../MyApp/dac_app.h)(0x69EA1715)
-I (../MyApp/adda_app.h)(0x69EA17CE)
+I (../MyApp/adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (../MyApp/oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1340,10 +1342,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68C53AFC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68C53AFB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68C53AFC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
-F (..\MyApp\mydefine.h)(0x69EA188B)()
-F (..\MyApp\scheduler.c)(0x69EA088B)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\scheduler.o --omf_browse gd32_demo_01\scheduler.crf --depend gd32_demo_01\scheduler.d)
+F (..\MyApp\mydefine.h)(0x69EA21FF)()
+F (..\MyApp\scheduler.c)(0x69EA21FF)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\scheduler.o --omf_browse gd32_demo_01\scheduler.crf --depend gd32_demo_01\scheduler.d)
 I (..\MyApp\scheduler.h)(0x69E2F293)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1389,10 +1391,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1414,7 +1417,7 @@ I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 F (..\MyApp\scheduler.h)(0x69E2F293)()
 F (..\MyApp\led_app.c)(0x68F354A7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\led_app.o --omf_browse gd32_demo_01\led_app.crf --depend gd32_demo_01\led_app.d)
 I (..\MyApp\led_app.h)(0x68F0C189)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1460,10 +1463,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
 I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1485,7 +1489,7 @@ I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 F (..\MyApp\led_app.h)(0x68F0C189)()
 F (..\MyApp\key_app.c)(0x69E2FFED)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\key_app.o --omf_browse gd32_demo_01\key_app.crf --depend gd32_demo_01\key_app.d)
 I (..\MyApp\key_app.h)(0x69E2F244)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1531,10 +1535,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
 I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1554,9 +1559,9 @@ I (../Component/WouoUI_Page/WouoUI_page.h)(0x698A1F29)
 I (../Component/WouoUI_Page/WouoUI_win.h)(0x698A1F29)
 I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 F (..\MyApp\key_app.h)(0x69E2F244)()
-F (..\MyApp\btn_app.c)(0x69EA0914)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\btn_app.o --omf_browse gd32_demo_01\btn_app.crf --depend gd32_demo_01\btn_app.d)
+F (..\MyApp\btn_app.c)(0x69EA22ED)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\btn_app.o --omf_browse gd32_demo_01\btn_app.crf --depend gd32_demo_01\btn_app.d)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1602,10 +1607,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
 I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1627,9 +1633,81 @@ I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 I (../Component/ebtn/ebtn.h)(0x682C623D)
 I (../Component/ebtn/bit_array.h)(0x682C623D)
 F (..\MyApp\btn_app.h)(0x68F33FA6)()
+F (..\MyApp\adda_input_app.c)(0x69EA21FE)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\adda_input_app.o --omf_browse gd32_demo_01\adda_input_app.crf --depend gd32_demo_01\adda_input_app.d)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
+I (../Core/Inc/main.h)(0x69EA0837)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68C53AFB)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69EA0837)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x68C53AFC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68C53AFC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68C53AFB)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68C53AFB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68C53AFC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68C53AFC)
+I (..\MyApp\dac_app.h)(0x69EA1715)
+I (..\MyApp\usart_app.h)(0x69E2F210)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
+I (..\MyApp\scheduler.h)(0x69E2F293)
+I (..\MyApp\led_app.h)(0x68F0C189)
+I (..\MyApp\key_app.h)(0x69E2F244)
+I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
+I (../Component/oled/oled.h)(0x60BF6F21)
+I (..\MyApp\oled_app.h)(0x69E9CFF5)
+I (../Component/u8g2/u8g2.h)(0x69CD713F)
+I (../Component/u8g2/u8x8.h)(0x69CD713F)
+I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5E8E3CC2)
+I (../Core/Inc/i2c.h)(0x69EA0836)
+I (../Component/WouoUI_Page/WouoUI.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_anim.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_common.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_conf.h)(0x69EA03A9)
+I (../Core/Inc/usart.h)(0x69033027)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (../Component/WouoUI_Page/WouoUI_graph.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_font.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_msg.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_page.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_win.h)(0x698A1F29)
+I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
+F (..\MyApp\adda_input_app.h)(0x69EA21FE)()
 F (..\MyApp\usart_app.c)(0x69EA17F1)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\usart_app.o --omf_browse gd32_demo_01\usart_app.crf --depend gd32_demo_01\usart_app.d)
 I (..\MyApp\usart_app.h)(0x69E2F210)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1676,8 +1754,9 @@ I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1700,9 +1779,9 @@ I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 I (../Component/ringbuffer/ringbuffer.h)(0x6905BFFD)
 I (D:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E3CC2)
 F (..\MyApp\usart_app.h)(0x69E2F210)()
-F (..\MyApp\adda_app.c)(0x69EA17CE)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\adda_app.o --omf_browse gd32_demo_01\adda_app.crf --depend gd32_demo_01\adda_app.d)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+F (..\MyApp\adda_app.c)(0x69EA21FF)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\adda_app.o --omf_browse gd32_demo_01\adda_app.crf --depend gd32_demo_01\adda_app.d)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1749,6 +1828,7 @@ I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
@@ -1770,9 +1850,9 @@ I (../Component/WouoUI_Page/WouoUI_msg.h)(0x698A1F29)
 I (../Component/WouoUI_Page/WouoUI_page.h)(0x698A1F29)
 I (../Component/WouoUI_Page/WouoUI_win.h)(0x698A1F29)
 I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
-F (..\MyApp\adda_app.h)(0x69EA17CE)()
+F (..\MyApp\adda_app.h)(0x69EA21FF)()
 F (..\MyApp\dac_app.c)(0x69EA1715)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\dac_app.o --omf_browse gd32_demo_01\dac_app.crf --depend gd32_demo_01\dac_app.d)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1819,10 +1899,11 @@ I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
@@ -1844,7 +1925,7 @@ I (../Component/WouoUI_Page/WouoUI_user.h)(0x698A1F29)
 F (..\MyApp\dac_app.h)(0x69EA1715)()
 F (..\MyApp\oled_app.c)(0x69E9FE34)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MyApp -I ../Component/ebtn -I ../Component/ringbuffer -I ../Component/oled -I ../Component/u8g2 -I ../Component/WouoUI_Page-I.\RTE\_GD32_Demo_01-ID:\Keil_v5\ARM\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="541" -DGD32F470 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F429xx-o gd32_demo_01\oled_app.o --omf_browse gd32_demo_01\oled_app.crf --depend gd32_demo_01\oled_app.d)
 I (..\MyApp\oled_app.h)(0x69E9CFF5)
-I (..\MyApp\mydefine.h)(0x69EA188B)
+I (..\MyApp\mydefine.h)(0x69EA21FF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
@@ -1891,10 +1972,11 @@ I (..\MyApp\scheduler.h)(0x69E2F293)
 I (..\MyApp\led_app.h)(0x68F0C189)
 I (..\MyApp\key_app.h)(0x69E2F244)
 I (..\MyApp\btn_app.h)(0x68F33FA6)
+I (..\MyApp\adda_input_app.h)(0x69EA21FE)
 I (..\MyApp\usart_app.h)(0x69E2F210)
 I (../Core/Inc/usart.h)(0x69033027)
 I (..\MyApp\dac_app.h)(0x69EA1715)
-I (..\MyApp\adda_app.h)(0x69EA17CE)
+I (..\MyApp\adda_app.h)(0x69EA21FF)
 I (../Component/oled/oled.h)(0x60BF6F21)
 I (../Component/u8g2/u8g2.h)(0x69CD713F)
 I (../Component/u8g2/u8x8.h)(0x69CD713F)

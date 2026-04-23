@@ -10,6 +10,7 @@
 #include "led_app.h"
 #include "key_app.h"
 #include "btn_app.h"
+#include "adda_input_app.h"
 #include "usart_app.h"
 #include "dac_app.h"
 #include "adda_app.h"

@@ -49,6 +49,7 @@ gd32_demo_01\scheduler.o: ..\MyApp\led_app.h
 gd32_demo_01\scheduler.o: ..\MyApp\mydefine.h
 gd32_demo_01\scheduler.o: ..\MyApp\key_app.h
 gd32_demo_01\scheduler.o: ..\MyApp\btn_app.h
+gd32_demo_01\scheduler.o: ..\MyApp\adda_input_app.h
 gd32_demo_01\scheduler.o: ..\MyApp\usart_app.h
 gd32_demo_01\scheduler.o: ../Core/Inc/usart.h
 gd32_demo_01\scheduler.o: ..\MyApp\dac_app.h

@@ -1,4 +1,5 @@
 #include "btn_app.h"
+#include "adda_input_app.h"
 #include "ebtn.h"
 
 /* 添加全局变量来跟踪组合键状态 */
@@ -123,6 +124,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 1 按键单击事件对应菜单"上"操作
     if ((btn->key_id == USER_BUTTON_1) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... (你自己的其他按键处理，例如切换 LED) ...
         // 发送"上"消息给 WouoUI
         WOUOUI_MSG_QUE_SEND(msg_up);
@@ -131,6 +133,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 2 按键单击事件对应菜单"下"操作
     if ((btn->key_id == USER_BUTTON_2) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... 
         WOUOUI_MSG_QUE_SEND(msg_down);
     }
@@ -138,6 +141,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 3 按键单击事件对应菜单"左"操作
     if ((btn->key_id == USER_BUTTON_3) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... 
         WOUOUI_MSG_QUE_SEND(msg_left);
     }
@@ -145,6 +149,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 4 按键单击事件对应菜单"右"操作
     if ((btn->key_id == USER_BUTTON_4) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... 
         WOUOUI_MSG_QUE_SEND(msg_right);
     }
@@ -152,6 +157,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 5 按键单击事件对应菜单"返回"操作
     if ((btn->key_id == USER_BUTTON_5) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... 
         WOUOUI_MSG_QUE_SEND(msg_return);
     }
@@ -159,6 +165,7 @@ void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
     // 示例：假设 Button 6 按键单击事件对应菜单"确认"操作
     if ((btn->key_id == USER_BUTTON_6) && (evt == EBTN_EVT_ONPRESS))
     { 
+        adda_input_handle_press(btn->key_id);
         // ... 
         WOUOUI_MSG_QUE_SEND(msg_click);
     }

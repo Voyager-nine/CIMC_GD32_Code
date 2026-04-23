@@ -56,6 +56,7 @@ gd32_demo_01\main.o: ../MyApp/led_app.h
 gd32_demo_01\main.o: ../MyApp/mydefine.h
 gd32_demo_01\main.o: ../MyApp/key_app.h
 gd32_demo_01\main.o: ../MyApp/btn_app.h
+gd32_demo_01\main.o: ../MyApp/adda_input_app.h
 gd32_demo_01\main.o: ../MyApp/usart_app.h
 gd32_demo_01\main.o: ../MyApp/dac_app.h
 gd32_demo_01\main.o: ../MyApp/adda_app.h

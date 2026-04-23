@@ -5,8 +5,6 @@ extern DMA_HandleTypeDef hdma_adc1;
 extern UART_HandleTypeDef huart1;
 extern TIM_HandleTypeDef htim3;
 
-extern uint8_t g_key_pressed_flag;
-
 wave_meas_t g_wave_meas;
 
 static void adc_start_dma_capture(void)
@@ -312,59 +310,6 @@ void wave_refresh_measurement_now(uint32_t timeout_ms)
     }
 
     adc_start_dma_capture();
-}
-
-void wave_key_task(void)
-{
-    const wave_ctrl_t *ctrl = dac_get_ctrl();
-
-    if (ctrl == NULL)
-    {
-        g_key_pressed_flag = 0U;
-        return;
-    }
-
-    switch (g_key_pressed_flag)
-    {
-    case 1U:
-        wave_set_frequency(ctrl->freq_hz - 10.0f);
-        break;
-
-    case 2U:
-        wave_set_frequency(ctrl->freq_hz + 10.0f);
-        break;
-
-    case 3U:
-        if (ctrl->wave_type == WAVE_TYPE_TRIANGLE)
-        {
-            wave_set_type(WAVE_TYPE_SINE);
-        }
-        else
-        {
-            wave_set_type((wave_type_t)(ctrl->wave_type + 1));
-        }
-        break;
-
-    case 4U:
-        dac_toggle_print_enable();
-        break;
-
-    case 5U:
-        uart_print_status();
-        break;
-
-    case 6U:
-        wave_set_type(WAVE_TYPE_SINE);
-        wave_set_frequency(100.0f);
-        wave_set_vpp(1.0f);
-        dac_set_print_enable(0U);
-        break;
-
-    default:
-        break;
-    }
-
-    g_key_pressed_flag = 0U;
 }
 
 void adc_task(void)
