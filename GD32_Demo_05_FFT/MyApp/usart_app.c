@@ -162,6 +162,13 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 
 void uart_print_status(void)
 {
+    const wave_ctrl_t *ctrl = dac_get_ctrl();
+
+    if (ctrl == NULL)
+    {
+        return;
+    }
+
     /*
      * 这里统一打印两组信息：
      * 1. [set] : 当前软件设定值
@@ -172,11 +179,11 @@ void uart_print_status(void)
      */
     my_printf(&huart1,
               "[set] wave=%s freq=%.2fHz period=%.2fms vpp=%.2fV print=%u\r\n",
-              wave_type_to_string(g_wave_ctrl.wave_type),
-              g_wave_ctrl.freq_hz,
-              g_wave_ctrl.period_ms,
-              g_wave_ctrl.vpp_set,
-              g_wave_ctrl.print_enable);
+              wave_type_to_string(ctrl->wave_type),
+              ctrl->freq_hz,
+              ctrl->period_ms,
+              ctrl->vpp_set,
+              ctrl->print_enable);
 
     my_printf(&huart1,
               "[adc] wave=%s freq=%.2fHz period=%.2fms vpp=%.2fV period_samples=%u\r\n",
@@ -275,12 +282,12 @@ void uart_cmd_parse(char *cmd_line)
     }
     else if (strcmp(cmd_line, "print start") == 0)
     {
-        g_wave_ctrl.print_enable = 1U;
+        dac_set_print_enable(1U);
         uart_print_status();
     }
     else if (strcmp(cmd_line, "print stop") == 0)
     {
-        g_wave_ctrl.print_enable = 0U;
+        dac_set_print_enable(0U);
         uart_print_status();
     }
     else

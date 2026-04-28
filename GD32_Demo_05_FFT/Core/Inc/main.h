@@ -69,18 +69,6 @@ void Error_Handler(void);
 #define KEY5_GPIO_Port GPIOE
 #define KEY6_Pin GPIO_PIN_13
 #define KEY6_GPIO_Port GPIOC
-#define LED1_Pin GPIO_PIN_6
-#define LED1_GPIO_Port GPIOB
-#define LED2_Pin GPIO_PIN_7
-#define LED2_GPIO_Port GPIOB
-#define LED3_Pin GPIO_PIN_8
-#define LED3_GPIO_Port GPIOB
-#define LED4_Pin GPIO_PIN_9
-#define LED4_GPIO_Port GPIOB
-#define LED5_Pin GPIO_PIN_0
-#define LED5_GPIO_Port GPIOE
-#define LED6_Pin GPIO_PIN_1
-#define LED6_GPIO_Port GPIOE
 
 /* USER CODE BEGIN Private defines */
 

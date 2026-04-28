@@ -1,4 +1,5 @@
 #include "btn_app.h"
+#include "adda_input_app.h"
 #include "ebtn.h"
 
 /* 添加全局变量来跟踪组合键状态 */
@@ -118,53 +119,59 @@ static uint8_t is_combo_forming(uint16_t current_key_id) {
  
 /* 7. 实现处理按键事件的回调函数 */
 // 函数原型: void (*ebtn_evt_fn)(struct ebtn_btn *btn, ebtn_evt_t evt);
-void my_handle_key_event(struct ebtn_btn *btn, ebtn_evt_t evt) {
-    uint16_t key_id = btn->key_id;
-//		uint16_t click_cnt = ebtn_click_get_count(btn);  // 获取连击次数
-    uint8_t is_combo_key = (key_id >= USER_BUTTON_COMBO_1 && key_id < USER_BUTTON_COMBO_MAX);
-    
-    switch (evt) 
-		{
-        case EBTN_EVT_ONPRESS:
-            if (is_combo_key) {
-                combo_key_active = 1;
-//                if(key_id == USER_BUTTON_COMBO_1) ucled[0] ^= 1;
-//                if(key_id == USER_BUTTON_COMBO_2) ucled[1] ^= 1;
-//                if(key_id == USER_BUTTON_COMBO_3) ucled[2] ^= 1;
-            } 
-            else {
-                // 关键改动：增加 is_combo_forming 检查
-                if (!combo_key_active && !is_combo_forming(key_id)) 
-								{
-//                    if(key_id == USER_BUTTON_1) ucled[3] ^= 1;
-//                    if(key_id == USER_BUTTON_2) ucled[4] ^= 1;
-//                    if(key_id == USER_BUTTON_3) ucled[5] ^= 1;
-//											if(key_id == USER_BUTTON_1)
-//												my_printf(&huart1,"Hello,World\r\n");
-                }
-            }
-            break;
-
-        case EBTN_EVT_ONRELEASE:
-						if (is_combo_key) {
-								combo_key_active = 0;
-						}
-            break;
-
-        case EBTN_EVT_ONCLICK:
-//						if(key_id == USER_BUTTON_1)
-//						{
-//							if(click_cnt == 2)
-//								ucled[1] ^= 1;
-//						}
-						break;
-				
-        case EBTN_EVT_KEEPALIVE:
-            if (!is_combo_key && !combo_key_active) {
-                // 处理单击和长按
-            }
-            break;
+void prv_btn_event(struct ebtn_btn *btn, ebtn_evt_t evt)
+{
+    // 示例：假设 Button 1 按键单击事件对应菜单"上"操作
+    if ((btn->key_id == USER_BUTTON_1) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... (你自己的其他按键处理，例如切换 LED) ...
+        // 发送"上"消息给 WouoUI
+        WOUOUI_MSG_QUE_SEND(msg_up);
     }
+    
+    // 示例：假设 Button 2 按键单击事件对应菜单"下"操作
+    if ((btn->key_id == USER_BUTTON_2) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... 
+        WOUOUI_MSG_QUE_SEND(msg_down);
+    }
+    
+    // 示例：假设 Button 3 按键单击事件对应菜单"左"操作
+    if ((btn->key_id == USER_BUTTON_3) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... 
+        WOUOUI_MSG_QUE_SEND(msg_left);
+    }
+    
+    // 示例：假设 Button 4 按键单击事件对应菜单"右"操作
+    if ((btn->key_id == USER_BUTTON_4) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... 
+        WOUOUI_MSG_QUE_SEND(msg_right);
+    }
+    
+    // 示例：假设 Button 5 按键单击事件对应菜单"返回"操作
+    if ((btn->key_id == USER_BUTTON_5) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... 
+        WOUOUI_MSG_QUE_SEND(msg_return);
+    }
+    
+    // 示例：假设 Button 6 按键单击事件对应菜单"确认"操作
+    if ((btn->key_id == USER_BUTTON_6) && (evt == EBTN_EVT_ONPRESS))
+    { 
+        adda_input_handle_press(btn->key_id);
+        // ... 
+        WOUOUI_MSG_QUE_SEND(msg_click);
+    }
+    
+    // 可以添加对长按、双击等事件的处理，并映射到 WouoUI 消息
+    // if ((btn->key_id == USER_BUTTON_X) && (evt == EBTN_EVT_LONG_PRESS_START)) { ... }
 }
 
 // 1. 在初始化找到找到参与组合的普通按键的内部索引 (Index)
@@ -177,7 +184,7 @@ void my_ebtn_init(void)
         btns_combo,                  // 静态组合按键数组的指针 (如果没有，传 NULL, 0)
         EBTN_ARRAY_SIZE(btns_combo), // 静态组合按键数量 (如果没有，传 0)
         my_get_key_state,               // 你的状态获取回调函数
-        my_handle_key_event             // 你的事件处理回调函数
+        prv_btn_event             // 你的事件处理回调函数
     );
     int key1_index = ebtn_get_btn_index_by_key_id(USER_BUTTON_1); // 获取 KEY1 (ID=1) 的内部索引
     int key2_index = ebtn_get_btn_index_by_key_id(USER_BUTTON_2); // 获取 KEY2 (ID=2) 的内部索引

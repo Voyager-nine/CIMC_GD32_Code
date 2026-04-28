@@ -1,4 +1,4 @@
-﻿/* USER CODE BEGIN Header */
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -21,6 +21,7 @@
 #include "adc.h"
 #include "dac.h"
 #include "dma.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -97,6 +98,7 @@ int main(void)
   MX_TIM3_Init();
   MX_DAC_Init();
   MX_TIM6_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   /* 初始化软件调度器 */
   scheduler_init();
@@ -108,6 +110,9 @@ int main(void)
   wave_ctrl_init();
   /* 启动 TIM3 触发的 ADC DMA 采样 */
   adc_tim_dma_init();
+	
+	oled_u8g2_init();
+	oled_page_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
